@@ -80,6 +80,7 @@
       "mocha": true
     },
     "rules": {
+      "semi": "off",
       "max-len": 0
     },
     "settings": {
