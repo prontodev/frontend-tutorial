@@ -1,12 +1,12 @@
 import React from 'react'
-import SomeComponent from 'components/SomeComponent'
+import SimpleBarChart from 'components/SimpleBarChart'
 
 
 class D3Components extends React.Component {
   render() {
     return (
       <div>
-        <SomeComponent />
+        <SimpleBarChart />
       </div>
     )
   }

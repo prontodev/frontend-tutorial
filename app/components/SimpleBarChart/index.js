@@ -2,7 +2,7 @@ import React from 'react'
 import * as d3 from 'd3'
 import Faux from 'react-faux-dom'
 
-const SomeComponent = React.createClass({
+const SimpleBarChart = React.createClass({
   mixins: [Faux.mixins.core, Faux.mixins.anim],
   getInitialState: () => ({}),
   componentDidMount() {
@@ -34,4 +34,4 @@ const SomeComponent = React.createClass({
   },
 })
 
-export default SomeComponent
+export default SimpleBarChart
