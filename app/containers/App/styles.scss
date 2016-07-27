@@ -1,0 +1,36 @@
+/**
+ * styles.css
+ *
+ * App container styles
+ */
+
+ $screenXs: 442px;
+ $screenSm: 768px;
+ $screenMd: 992px;
+ $screenLg: 1200px;
+
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: $screenSm) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: $screenMd) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: $screenLg) {
+  .container {
+    width: 1170px;
+  }
+}
