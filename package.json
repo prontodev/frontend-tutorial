@@ -82,6 +82,7 @@
     "rules": {
       "semi": "off",
       "react/prefer-stateless-function": "off",
+      "react/prefer-es6-class": "off",
       "max-len": 0
     },
     "settings": {
