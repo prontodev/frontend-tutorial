@@ -46,14 +46,13 @@ const rootRoute = {
   childRoutes: createRoutes(store),
 }
 
+// Scroll to top when going to a new page, imitating default browser
+// behaviour
+const render = applyRouterMiddleware(useScroll())
+
 ReactDOM.render(
   <Root
-    {...{ store, history, rootRoute }}
-    render={
-      // Scroll to top when going to a new page, imitating default browser
-      // behaviour
-      applyRouterMiddleware(useScroll())
-    }
+    {...{ store, history, rootRoute, render }}
   />,
   document.getElementById('app')
 )
