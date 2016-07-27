@@ -81,6 +81,7 @@
     },
     "rules": {
       "semi": "off",
+      "react/prefer-stateless-function": "off",
       "max-len": 0
     },
     "settings": {

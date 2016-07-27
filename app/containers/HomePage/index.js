@@ -10,12 +10,16 @@
  */
 
 import React from 'react';
+import D3Components from 'components/D3Components'
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   render() {
     return (
-      <h1>This is the Homepage!</h1>
+      <div>
+        <h1>Components</h1>
+        <D3Components />
+      </div>
     );
   }
 }
