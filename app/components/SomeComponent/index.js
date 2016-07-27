@@ -8,15 +8,20 @@ const SomeComponent = React.createClass({
   componentDidMount() {
     const faux = this.connectFauxDOM('div', 'chart')
     const data = [1, 2, 3]
+    const scale = d3.scaleLinear()
+      .domain([0, d3.max(data)])
+      .range([0, 100]);
 
     d3.select(faux)
       .selectAll('div')
         .data(data)
       .enter()
         .append('div')
-        .style('width', d => `${d * 10}px`)
+        .style('width', d => `${scale(d)}%`)
         .style('background', 'red')
         .style('text-align', 'right')
+        .style('border', '0.2em solid gray')
+        .style('margin', '1em 0')
         .text(d => d);
   },
   render() {
