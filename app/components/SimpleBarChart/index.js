@@ -10,7 +10,7 @@ const SimpleBarChart = React.createClass({
     const data = [1, 2, 3]
     const scale = d3.scaleLinear()
       .domain([0, d3.max(data)])
-      .range([0, 100]);
+      .range([0, 100])
 
     d3.select(faux)
       .selectAll('div')
@@ -27,7 +27,7 @@ const SimpleBarChart = React.createClass({
   render() {
     return (
       <div>
-        <h2>Some Component</h2>
+        <h2>Simple Bar Chart</h2>
         {this.state.chart}
       </div>
     )
